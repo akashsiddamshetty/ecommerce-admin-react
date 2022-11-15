@@ -11,11 +11,14 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import LogoutIcon from "@mui/icons-material/Logout";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">ECOMMERCE ADMIN</span>
+        <Link to="/">
+          <span className="logo">ECOMMERCE ADMIN</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -29,7 +32,9 @@ const Sidebar = () => {
 
           <li>
             <PeopleOutlineOutlinedIcon className="icon" />
-            <span>Users</span>
+            <Link to="/users">
+              <span>Users</span>
+            </Link>
           </li>
           <li>
             <InventoryIcon className="icon" />
