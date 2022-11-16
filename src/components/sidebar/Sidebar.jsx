@@ -24,18 +24,19 @@ const Sidebar = () => {
       <div className="center">
         <ul>
           <p className="title">MAIN </p>
-          <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
-          </li>
+          <Link to="/">
+            <li>
+              <DashboardIcon className="icon" />
+              <span>Dashboard</span>
+            </li>
+          </Link>
           <p className="title">LISTS</p>
-
-          <li>
-            <PeopleOutlineOutlinedIcon className="icon" />
-            <Link to="/users">
+          <Link to="/users">
+            <li>
+              <PeopleOutlineOutlinedIcon className="icon" />
               <span>Users</span>
-            </Link>
-          </li>
+            </li>
+          </Link>
           <li>
             <InventoryIcon className="icon" />
             <span>Products</span>
